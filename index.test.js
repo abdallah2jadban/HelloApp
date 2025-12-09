@@ -1,5 +1,7 @@
-const hello = require('./index');
+function sum(a, b) {
+  return a + b;
+}
 
-test('say hello', () => {
-    expect(hello('World')).toBe('Hello, World!');
+test('adds 1 + 2 to equal 3', () => {
+  expect(sum(1, 2)).toBe(3);
 });
